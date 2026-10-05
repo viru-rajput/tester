@@ -1,0 +1,15 @@
+my thoughts on big-o
+O(1) - We have to run it only for one time. 1 is a constant. e.g num[100] = in an array, it will directly lookout for num[100]. 
+another example can be like search for element in a set. Which will be only one time.
+
+O(n) - it will run for the number of elements present in an array or list.
+for ex, we need to find element x in list of array. It will keep looking for each element in array.
+
+O(n2) - it will be like searching for unique elements in same array which will be doubled work. for ex, we have to find duplicate items in an unique array. 
+[A,B,C,D,E] - 5*4/2 = 10
+
+
+Claude's output - 
+O(1), constant: the number of steps stays the same however much data you have. names[500] takes one step with 10 names or 10 million, because Python jumps straight to that position. A set lookup is O(1) on average for a similar reason: it computes where the item should be and checks only that spot.
+O(n), linear: the steps grow in step with the data. Searching an unsorted list for Priya means looking at items one by one, so 10 times more names means about 10 times more work.
+O(n²), quadratic: the steps grow with the square of the data. Comparing every item against the others (your 5 × 4 / 2 = 10 case) means doubling the input gives about 4 times the work. 1,000 names took 499,500 comparisons, and 2,000 took 1,999,000.
